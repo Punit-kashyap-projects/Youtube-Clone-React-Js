@@ -1,0 +1,131 @@
+#navbar {
+  /* border: 1px solid green; */
+  padding: 0;
+  /* width: 90vw; */
+  /* position: fixed; */
+  /* width: calc(100vw - 60px);
+  top:0; */
+  /* left: 60px; */
+  background-color: rgb(30, 30, 30);
+  margin: 0;
+  border-bottom: 1.5px solid rgb(58, 58, 58);;
+}
+
+#navbar ul {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  /* width: calc(100vw - 150px); */
+  padding: 10px 5px;
+}
+
+#navbar ul li {
+  list-style-type: none;
+}
+
+#icon {
+  height: 35px;
+  padding: 0;
+  margin: 0;
+  filter: invert(1);
+}
+
+#searchCont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 105px;
+  /* border: 1px solid green; */
+}
+
+#searchBar {
+  /* border: 1px solid blue;  */
+   display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#searchBar input[type="text"] {
+  width: 500px;
+  height: 35px;
+  padding: 3px 10px;
+  font-size: 16px;
+  background-color: black;
+  border: none;
+  outline: none;
+  color: white;
+}
+
+#searchBar input[type='text']:focus{
+    border: 0.5px solid blue;
+}
+
+#searchBar button{
+    height: 40px;
+    width: 70px;
+}
+
+.darkBtn {
+  border: none;
+  background-color: rgb(47, 43, 43);
+}
+
+.darkBtn img{
+    height: 23px;
+    filter: invert(1)
+}
+
+.darkBtnRound{
+    /* border: 1px solid red; */
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: black;
+    border: none;
+    margin: 0 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.darkBtnRound:hover{
+    transition: .3s;
+    background-color: rgb(47, 43, 43);
+
+}
+
+.darkBtnRound img{
+    height: 18px;
+    filter: invert(1)
+}
+
+
+#searchCont img {
+  filter: invert(1);
+}
+
+
+#navOptionCont button{
+    background: transparent;
+    border: none;
+    padding: 5px;
+    margin: 0px 3px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#navOptionCont button:hover{
+    transition: .3s;
+    border: 1px solid grey;
+    background-color: rgb(47, 43, 43);
+
+}
+
+
+#navOptionCont button img{
+    height: 20px;
+    filter: invert(1);
+}

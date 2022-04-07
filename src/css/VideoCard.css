@@ -1,0 +1,112 @@
+.videoCard {
+  /* border: 2px solid red; */
+  height: 300px;
+  width: 260px;
+  padding: 10px 5px;
+  margin: 10px 5px;
+  color: white;
+}
+
+.videoCard:hover {
+  transition: .5s;
+  /* margin-top: 20px; */
+  transition-delay: 1s;
+  background: rgb(48, 46, 46);
+  border-radius: 5px;
+  z-index: 4;
+  transform: scale(1.25);
+}
+
+.videoCard {
+  text-decoration: none;
+}
+
+.invert {
+  filter: invert(1);
+}
+
+.thumbnail {
+  height: 155px;
+  width: 100%;
+  z-index: -1;
+  margin: auto;
+  display: block;
+  /* border: 2px solid yellow; */
+}
+
+.timeTag {
+  float: left;
+  /* border: 1px solid greenyellow; */
+  z-index: 2;
+  position: relative;
+  visibility: visible;
+  padding: 1px 10px;
+  top: -6%;
+  font-weight: bold;
+  font-size: 14px;
+  left: 80%;
+}
+
+.videoInfo {
+  /* border: 1px solid palegreen; */
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  /* justify-content: center; */
+  max-height: 40px;
+  padding: 5px;
+  width: calc(100% - 10px);
+}
+
+.videoInfo h3 {
+  /* border: 1px solid blue; */
+  width: 80%;
+  /* font-weight: bold; */
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.channelDp {
+  /* border: 1px solid red; */
+  padding: 1px;
+  margin: 1px 10px;
+  height: 35px;
+  border-radius: 50%;
+  width: 35px;
+}
+
+.videoStats {
+  /* border: 1px solid cyan; */
+  display: flex;
+  flex-direction: column;
+  padding: 10px 40px;
+}
+
+.videoStats p {
+  padding: 0;
+  margin: 0;
+  color: silver;
+  font-size: 13px;
+}
+
+.hoveringTag{
+    float: left;
+    /* border: 1px solid greenyellow; */
+    z-index: 8;
+    position: relative;
+    visibility: hidden;
+    padding: 5px 10px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    color: white;
+    top: 20%;
+    font-weight: bold;
+    font-size: 14px;
+    left: 5%;
+}
+
+.videoCard:hover + .hoveringTag{
+    visibility: visible;
+}

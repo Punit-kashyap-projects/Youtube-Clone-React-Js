@@ -1,0 +1,27 @@
+#mainContent{
+    /* border: 1px solid yellow; */
+    height: 100%;
+    padding: 0;
+    width: calc(100vw - 75px);
+    margin-left: 70px;
+}
+
+#contentDisplay{
+    overflow-y: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-height: calc(100vh - 120px);
+}
+
+#contentDisplay::-webkit-scrollbar{
+    width: 5px;
+    /* color: silver; */
+    background-color: black;
+}
+
+#contentDisplay::-webkit-scrollbar-thumb{
+    background-color: rgb(162, 161, 161);
+    border-radius: 30px;
+}
