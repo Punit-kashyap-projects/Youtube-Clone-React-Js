@@ -7,10 +7,10 @@
   color: white;
 }
 
-.videoCard:hover {
-  transition: .5s;
+.videoCardEffect:hover {
+  transition: 0.5s;
   /* margin-top: 20px; */
-  transition-delay: 1s;
+  transition-delay: 3s;
   background: rgb(48, 46, 46);
   border-radius: 5px;
   z-index: 4;
@@ -58,10 +58,10 @@
   width: calc(100% - 10px);
 }
 
-.videoInfo h3 {
-  /* border: 1px solid blue; */
+.videoInfo p {
   width: 80%;
-  /* font-weight: bold; */
+  word-break: break-all;
+  display: flex;
   text-decoration: none;
   font-size: 16px;
 }
@@ -75,6 +75,10 @@
   width: 35px;
 }
 
+.height-20 {
+  height: 20px;
+}
+
 .videoStats {
   /* border: 1px solid cyan; */
   display: flex;
@@ -86,27 +90,53 @@
   padding: 0;
   margin: 0;
   color: silver;
+  word-break: break-all;
   font-size: 13px;
 }
 
-.hoveringTag{
-    float: left;
-    /* border: 1px solid greenyellow; */
-    z-index: 8;
-    position: relative;
-    visibility: hidden;
-    padding: 5px 10px;
-    background-color: black;
-    display: flex;
-    align-items: center;
-    /* justify-content: center; */
-    color: white;
-    top: 20%;
-    font-weight: bold;
-    font-size: 14px;
-    left: 5%;
+.hoveringTag {
+  float: left;
+  /* border: 1px solid greenyellow; */
+  z-index: 8;
+  position: relative;
+  visibility: hidden;
+  padding: 5px 10px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  color: white;
+  top: 20%;
+  font-weight: bold;
+  font-size: 14px;
+  left: 5%;
 }
 
-.videoCard:hover + .hoveringTag{
-    visibility: visible;
+.videoCard:hover + .hoveringTag {
+  visibility: visible;
+}
+
+.toggleOpt {
+  width: 30px;
+  height: 30px;
+  margin: 0px 5px;
+  display: flex;
+  border-radius: 50%;
+  justify-content: center;
+  padding: 15px;
+  cursor: pointer;
+  align-items: center;
+  background: transparent;
+  border: none;
+}
+
+.toggleOpt:hover {
+  transition: 0.3s;
+  border: 1px solid grey;
+  background: rgb(103, 96, 96);
+}
+
+.userOpt {
+  border: 2px solid red;
+  z-index: 10;
 }

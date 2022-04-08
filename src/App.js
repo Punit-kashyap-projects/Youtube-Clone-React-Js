@@ -3,9 +3,10 @@ import Sidebar from "./components/Sidebar";
 import MainContent from "./components/MainContent";
 
 function App() {
-  document.title = 'YouTube'
+  document.title = "YouTube";
   return (
     <>
+     
       <div id="app">
         <div> {<Sidebar />}</div>
         <div> {<MainContent />}</div>
